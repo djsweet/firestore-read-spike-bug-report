@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Firestore Read Spike Demo</title>
+  </head>
+  <body id="document-body">
+    <table>
+      <tr>
+        <td>Firebase SDK:</td>
+        <td id="firebase-sdk-field">Wait</td>
+      </tr>
+      <tr>
+        <td>Expected documents:</td>
+        <td id="expected-document-count">Wait</td>
+      </tr>
+      <tr>
+        <td>Current documents:</td>
+        <td id="current-document-count">Wait</td>
+      </tr>
+      <tr>
+        <td>Last update at:</td>
+        <td id="last-update-field">Wait</td>
+      </tr>
+    </table>
+
+    <button id="disable-network-button" disabled="yes">Disable Network</button>
+
+    <hr />
+
+    <table id="update-data-table">
+      <tr>
+        <td>Timestamp</td>
+        <td>Change type</td>
+        <td>Affected documents</td>
+      </tr>
+    </table>
+
+    <script>
+      const targetFirebaseVersion = "7.9.1";
+      const bodyElement = document.getElementById("document-body");
+
+      const firebaseAppNode = document.createElement("script");
+      firebaseAppNode.setAttribute(
+        "src",
+        `https://www.gstatic.com/firebasejs/${targetFirebaseVersion}/firebase-app.js`
+      );
+      bodyElement.appendChild(firebaseAppNode);
+
+      const firebaseFirestoreNode = document.createElement("script");
+      firebaseFirestoreNode.setAttribute(
+        "src",
+        `https://www.gstatic.com/firebasejs/${targetFirebaseVersion}/firebase-firestore.js`
+      );
+      bodyElement.appendChild(firebaseFirestoreNode);
+
+      const mainJsNode = document.createElement("script");
+      mainJsNode.setAttribute("src", "./index.js");
+      bodyElement.appendChild(mainJsNode);
+    </script>
+  </body>
+</html>
