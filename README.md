@@ -57,9 +57,9 @@ installed. You will need it to obtain credentials to run the server script.
 ### Step 1: Hard code the relevant credentials
 
 Update
-[the server]()
+[the server](https://github.com/djsweet/firestore-read-spike-bug-report/blob/840563526dc23642c8cff84cf90bf3a20b8d2792/server/index.js#L6)
 with your Firebase Project ID, and
-[the client]()
+[the client](https://github.com/djsweet/firestore-read-spike-bug-report/blob/840563526dc23642c8cff84cf90bf3a20b8d2792/client/index.js#L2)
 with both your Firebase Project ID and your
 Web API Key.
 
