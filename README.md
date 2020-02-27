@@ -1,4 +1,5 @@
-This is in service of an upcoming [Firebase JavaScriptSDK](https://github.com/firebase/firebase-js-sdk) bug report.
+This is in service of [a bug report](https://github.com/firebase/firebase-js-sdk/issues/2683)
+opened against the [Firebase JavaScriptSDK](https://github.com/firebase/firebase-js-sdk).
 
 ## Background
 
