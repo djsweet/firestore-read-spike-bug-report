@@ -9,7 +9,7 @@
   "author": "Daniel Sweet",
   "license": "MIT",
   "dependencies": {
-    "firebase-admin": "^8.9.2",
+    "firebase-admin": "^11.4.1",
     "p-limit": "^2.2.2"
   }
 }
